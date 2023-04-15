@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MAIOR_IDADE(idade) idade >= 18 ? printf("Maior de idade\n") : printf("Menor de idade\n")
+
+int main() {
+  char nome[50];
+  int idade;
+
+  printf("Digite o seu nome: ");
+  scanf("%s", nome);
+
+  printf("Digite a sua idade: ");
+  scanf("%d", &idade);
+
+  printf("Nome: %s\n", nome);
+  printf("Idade: %d\n", idade);
+
+  MAIOR_IDADE(idade);
+
+  return 0;
+}
