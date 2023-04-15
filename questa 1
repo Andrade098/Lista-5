@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+int num1, num2, soma, sub, divi, mult;
+	
+	
+	printf("Digite o primeiro numero: ");
+ 	scanf("%d", &num1);
+  
+  	printf("Digite o segundo numero: ");
+  	scanf("%d", &num2);
+		
+	soma = num1 + num2;
+	printf("\nO resultado da soma eh %d: ", soma);
+	
+	sub = num1 - num2;
+	printf("\nO resultado da subtracao eh %d: ", sub);
+	
+	divi = (num1/num2);
+	printf("\nO resultado da divicao eh %d: ", divi);
+	
+	mult = (num1 * num2);
+	printf("\nO resultado da multiplicacao eh %d: ", mult);
+return 0;				
+}
