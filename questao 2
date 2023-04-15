@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+long long int fatorial(int num) {
+  if (num == 0) { // Caso base
+   return 1;
+  } else { // Caso recursivo
+    return num * fatorial(num - 1);
+  }
+}
+
+int main() {
+  int inicio = 30;
+  int fim = 33;
+  
+  printf("Fatoriais dos números no intervalo [%d, %d]:\n", inicio, fim);
+  
+  for (int i = inicio; i <= fim; i++) {
+    printf("%d! = %lld\n", i, fatorial(i));
+  }
+  
+  return 0;
+}
